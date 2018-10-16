@@ -71,7 +71,7 @@ function queryMongo(mongo) {
 }
 
 function processDoc(collection, db) {
-    let stream = FS.createWriteStream("logs/" + collection + "-log.log", {flags:'a'});
+    let stream = FS.createWriteStream("logs/" + collection + ".log", {flags:'a'});
     return (doc) => {
         if(valueMap[collection]) {
             let values  = valueMap[collection];
