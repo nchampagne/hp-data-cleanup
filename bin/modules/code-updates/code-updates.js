@@ -19,7 +19,7 @@ let colors = {
 }
 
 let valueMap = {
-    "conditions": {
+    "procedures": {
         "codeSystem": "2.16.840.1.113883.6.96",
         "codeSystemName": "snomed-CT"
     },
@@ -31,9 +31,9 @@ let valueMap = {
         "codeSystem": "2.16.840.1.113883.6.1",
         "codeSystemName": "loinc"
     },
-    "medications": {
-        "codeSystem": "2.16.840.1.113883.6.88",
-        "codeSystemName": "rxNorm"
+    "conditions": {
+        "codeSystem": "2.16.840.1.113883.6.96",
+        "codeSystemName": "snomed-CT"
     }
 }
 
@@ -53,7 +53,7 @@ let serviceMap	= new Map([
 	["conditions",	    false],
 	["biometrics",      false],
 	["immunizations",   false],
-	["medications",     false]]);
+	["procedures",      false]]);
 
 // Exported hook
 module.exports.execute = function execute(mongoUri) {
@@ -66,20 +66,22 @@ function queryMongo(mongo) {
     let db = mongo.db("health-profile")
     db.collection("conditions").find(query).forEach(processDoc("conditions", db), handleCompletion("conditions"));
     db.collection("biometrics").find(query).forEach(processDoc("biometrics", db), handleCompletion("biometrics"));
-    db.collection("medications").find(query).forEach(processDoc("medications", db), handleCompletion("medications"));
+    db.collection("procedures").find(query).forEach(processDoc("procedures", db), handleCompletion("procedures"));
     db.collection("immunizations").find(query).forEach(processDoc("immunizations", db), handleCompletion("immunizations"));
 }
 
 function processDoc(collection, db) {
     let stream = FS.createWriteStream("logs/" + collection + ".log", {flags:'a'});
     return (doc) => {
-        if(valueMap[collection]) {
+        if(valueMap[collection] && doc.code) {
             let values  = valueMap[collection];
-            let codes   = {
-                "code": doc.code,
-                "codeSystem": values.codeSystem,
-                "codeSystemName": values.codeSystemName
-            }
+            let codes   = [
+                {
+                    "code": doc.code,
+                    "codeSystem": values.codeSystem,
+                    "codeSystemName": values.codeSystemName
+                }
+            ]
             stream.write("UPDATING: " + doc._id + "\n");
             db.collection(collection).update({ "_id" : doc._id  }, { "$set": { "codeSystem": values.codeSystem, "codeSystemName": values.codeSystemName, "codes": codes }}, { upsert: false}, function(err, results) {
                 if(err) console.log("ERROR writing to mongo: " + doc._id + " - " + err + "\n");
