@@ -64,10 +64,14 @@ module.exports.execute = function execute(mongoUri) {
 function queryMongo(mongo) {
     mongoClient = mongo;
     let db = mongo.db("health-profile")
-    db.collection("conditions").find(query).forEach(processDoc("conditions", db), handleCompletion("conditions"));
-    db.collection("biometrics").find(query).forEach(processDoc("biometrics", db), handleCompletion("biometrics"));
-    db.collection("procedures").find(query).forEach(processDoc("procedures", db), handleCompletion("procedures"));
-    db.collection("immunizations").find(query).forEach(processDoc("immunizations", db), handleCompletion("immunizations"));
+    for (const k of serviceMap.keys()) {
+        console.log(k)
+        db.collection(k).find(query).forEach(processDoc(k, db), handleCompletion(k));
+    }
+    // db.collection("conditions").find(query).forEach(processDoc("conditions", db), handleCompletion("conditions"));
+    // db.collection("biometrics").find(query).forEach(processDoc("biometrics", db), handleCompletion("biometrics"));
+    // db.collection("procedures").find(query).forEach(processDoc("procedures", db), handleCompletion("procedures"));
+    // db.collection("immunizations").find(query).forEach(processDoc("immunizations", db), handleCompletion("immunizations"));
 }
 
 function processDoc(collection, db) {
