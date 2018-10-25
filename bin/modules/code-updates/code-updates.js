@@ -68,10 +68,6 @@ function queryMongo(mongo) {
         console.log(k)
         db.collection(k).find(query).forEach(processDoc(k, db), handleCompletion(k));
     }
-    // db.collection("conditions").find(query).forEach(processDoc("conditions", db), handleCompletion("conditions"));
-    // db.collection("biometrics").find(query).forEach(processDoc("biometrics", db), handleCompletion("biometrics"));
-    // db.collection("procedures").find(query).forEach(processDoc("procedures", db), handleCompletion("procedures"));
-    // db.collection("immunizations").find(query).forEach(processDoc("immunizations", db), handleCompletion("immunizations"));
 }
 
 function processDoc(collection, db) {
