@@ -69,7 +69,6 @@ function queryMongo(mongo) {
     mongoClient = mongo;
     let db = mongo.db("health-profile")
     for (const k of serviceMap.keys()) {
-        console.log(k)
         db.collection(k).find(query).forEach(processDoc(k, db), handleCompletion(k));
     }
 }
@@ -86,9 +85,13 @@ function processDoc(collection, db) {
                     "codeSystemName": values.codeSystemName
                 }
             ]
-            stream.write("UPDATING: " + doc._id + "\n");
-            db.collection(collection).update({ "_id" : doc._id  }, { "$set": { "codeSystem": values.codeSystem, "codeSystemName": values.codeSystemName, "codes": codes }}, { upsert: false}, function(err, results) {
-                if(err) console.log("ERROR writing to mongo: " + doc._id + " - " + err + "\n");
+            db.collection(collection).update({ "_id" : doc._id  }, { "$set": { "codeSystem": values.codeSystem, "codeSystemName": values.codeSystemName, "codes": codes }}, { upsert: false }, function(err, results) {
+                if(err) {
+                    stream.write("ERROR writing to mongo: " + doc._id + " - " + err + "\n");
+                }
+                else {
+                    stream.write("UPDATING: " + doc._id + "\n");
+                }
             });
         }
     };
