@@ -57,11 +57,11 @@ module.exports.execute = function execute(mongoUri) {
 }
 
 function createLogDir() {
-    if (!fs.existsSync("logs")) {
-        fs.mkdirSync("logs");
+    if (!FS.existsSync("logs")) {
+        FS.mkdirSync("logs");
     }
-    if (!fs.existsSync("logs/code-cleanup")) {
-        fs.mkdirSync("logs/code-cleanup");
+    if (!FS.existsSync("logs/code-cleanup")) {
+        FS.mkdirSync("logs/code-cleanup");
     }
 }
 
