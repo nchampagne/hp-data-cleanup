@@ -52,7 +52,17 @@ let serviceMap	= new Map([
 // Exported hook
 module.exports.execute = function execute(mongoUri) {
     dbUrl = mongoUri;
+    createLogDir();
     mongo(queryMongo);
+}
+
+function createLogDir() {
+    if (!fs.existsSync("logs")) {
+        fs.mkdirSync("logs");
+    }
+    if (!fs.existsSync("logs/code-cleanup")) {
+        fs.mkdirSync("logs/code-cleanup");
+    }
 }
 
 function queryMongo(mongo) {
