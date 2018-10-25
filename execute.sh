@@ -5,7 +5,7 @@
 ###############################################################################
 
 # Removing previous logs
-rm logs/*.log
+rm logs/*/*.log
 
 # Execute
 node bin/index.js $@

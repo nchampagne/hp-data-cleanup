@@ -7,15 +7,9 @@ let database	= null;
 let options 	= {
     useNewUrlParser:	true,
 	auto_reconnect: 	true,
-	keepAlive: 		1,
+	keepAlive: 		    1,
 	connectTimeoutMS: 	10000000,
 	socketTimeoutMS: 	10000000
-}
-
-let colors = {
-    green:  '\033[0;32m',
-	red:	'\033[0;31m',
-	nc:     '\033[0m'
 }
 
 let valueMap = {
@@ -71,7 +65,7 @@ function queryMongo(mongo) {
 }
 
 function processDoc(collection, db) {
-    let stream = FS.createWriteStream("logs/" + collection + ".log", {flags:'a'});
+    let stream = FS.createWriteStream("logs/code-cleanup/" + collection + ".log", {flags:'a'});
     return (doc) => {
         if(valueMap[collection] && doc.code) {
             let values  = valueMap[collection];
@@ -103,7 +97,7 @@ function mongo(action) {
 
 function handleCompletion(collection) {
 	return (err) => {
-		if(err != null) console.log(colors.red + "ERROR: " + colors.nc + err);
+		if(err != null) console.log(Util.colors.red + "ERROR: " + Util.colors.nc + err);
 		else {
 			Util.prettifyText(collection, (text) => {
 				finish(text, collection);
@@ -125,7 +119,7 @@ function finish(data, collection) {
 	}
 	if(allComplete) {
 		Util.prettifyText("ALL DONE!", (text) => {
-			console.log(splitter + "\n" + colors.green + text + colors.nc);
+			console.log(splitter + "\n" + Util.colors.green + text + Util.colors.nc);
 			mongoClient.close();
             process.exit(0);
 		});
