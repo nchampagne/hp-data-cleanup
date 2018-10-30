@@ -2,9 +2,7 @@ const Mongo	= require('mongodb').MongoClient;
 const FS 	= require('fs');
 const Util  = require("../utils/utils.js");
 
-let mongoClient	= null;
-let database	= null;
-let options 	= {
+const Options 	= {
     useNewUrlParser:	true,
 	auto_reconnect: 	true,
 	keepAlive: 		    1,
@@ -12,7 +10,7 @@ let options 	= {
 	socketTimeoutMS: 	10000000
 }
 
-let valueMap = {
+const ValueMap = {
     "procedures": {
         "codeSystem": "2.16.840.1.113883.6.96",
         "codeSystemName": "snomed-CT"
@@ -31,7 +29,7 @@ let valueMap = {
     }
 }
 
-let query = { "$and": [
+const Query = { "$and": [
     {"source.name": "RealAge"},
     { "$or": [
         { "codeSystem":     { "$exists": false }},
@@ -42,6 +40,9 @@ let query = { "$and": [
         ]}
     ]}
 ]}
+
+let mongoClient	= null;
+let dbUrl       = null;
 
 let serviceMap	= new Map([
 	["conditions",	    false],
@@ -69,15 +70,15 @@ function queryMongo(mongo) {
     mongoClient = mongo;
     let db = mongo.db("health-profile")
     for (const k of serviceMap.keys()) {
-        db.collection(k).find(query).forEach(processDoc(k, db), handleCompletion(k));
+        db.collection(k).find(Query).forEach(processDoc(k, db), handleCompletion(k));
     }
 }
 
 function processDoc(collection, db) {
     let stream = FS.createWriteStream("logs/code-cleanup/" + collection + ".log", {flags:'a'});
     return (doc) => {
-        if(valueMap[collection] && doc.code) {
-            let values  = valueMap[collection];
+        if(ValueMap[collection] && doc.code) {
+            let values  = ValueMap[collection];
             let codes   = [
                 {
                     "code": doc.code,
@@ -98,7 +99,7 @@ function processDoc(collection, db) {
 }
 
 function mongo(action) {
-    Mongo.connect(dbUrl, options, (err, client) => {
+    Mongo.connect(dbUrl, Options, (err, client) => {
     	if(err) {
     		console.log("ERROR: " + err);
     		return;

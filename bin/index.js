@@ -1,6 +1,7 @@
-const Argv              = require('minimist')
-const CodeCleanup       = require("./modules/code-updates/code-updates.js");
-const HighmarkHPCDupes  = require("./modules/highmark-healthplanclaim-dupes/highmark-healthplanclaim-dupes.js");
+const Argv                  = require('minimist')
+const CodeCleanup           = require("./modules/code-updates/code-updates.js");
+const HighmarkHPCDupes      = require("./modules/highmark-healthplanclaim-dupes/highmark-healthplanclaim-dupes.js");
+const DemographicsCatchup   = require("./modules/data-catchup/data-catchup.js");
 
 /*
  *  -m localhost:27017
@@ -38,6 +39,9 @@ function executeCommand(command) {
             break;
         case "highmark-source-name-dupes":
             HighmarkHPCDupes.execute("mongodb://" + args.m);
+            break;
+        case "data-catchup":
+            DemographicsCatchup.execute("mongodb://" + args.s, "mongodb://" + args.d);
             break;
         default:
             if(command) console.log("Unrecognized command " + command);
