@@ -39,10 +39,10 @@ function query(secureId) { return { "secureId": secureId }; }
 function processDoc(srcColl, destColl, secureId) {
     console.log("Processing " + secureId);
     srcColl.findOne(query(secureId), (err, srcDoc) => {
-        if(err) { console.log(errorText("SOURCE COLLECTION ERROR: ") + err); return; }
+        if(err) { console.log(errorText("SOURCE COLLECTION ERROR: ") + err); }
         else if(srcDoc) {
             destColl.findOne(query(secureId), (err, destDoc) => {
-                if(err) { console.log(errorText("DESTINATION COLLECTION ERROR: ") + err); return; }
+                if(err) { console.log(errorText("DESTINATION COLLECTION ERROR: ") + err); }
                 else {
                     if(destDoc) {
                         logStream.write("Secure ID found in dest coll: " + secureId + "\n");
