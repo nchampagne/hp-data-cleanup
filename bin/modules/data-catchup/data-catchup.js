@@ -22,7 +22,27 @@ module.exports.execute = function execute(srcMongoUri, destinationMongoUri) {
             let destinationCollection = destinationClient.db("health-profile").collection("demographics");
             readFile(__dirname + "/demographics-secureIds.txt", (secureId) => {
                 if(!secureId) finish(srcClient, destinationClient);
-                else console.log("Searching for secureId: " + secureId);
+                else {
+                    srcCollection.findOne({"secureId": secureId}, (err, srcDoc) => {
+                        if(err) console.log("SOURCE COLLECTION ERROR: " + err);
+                        else if(srcDoc) {
+                            destinationCollection.findOne({"secureId": secureId}, (err, destDoc) => {
+                                if(err) console.log("DESTINATION COLLECTION ERROR: " + err);
+                                else {
+                                    if(destDoc) {
+                                        console.log("SecureId found in destination collection. No work necessary!");
+                                    }
+                                    else {
+                                        console.log("Inserting secureId: " + secureId);
+                                        destinationCollection.insertOne(srcDoc, null, (err, result) => {
+                                            if(err) console.log("ERROR INSERTING: " + err);
+                                        });
+                                    } 
+                                }
+                            });
+                        }
+                    });
+                }
             });
         });
     });
