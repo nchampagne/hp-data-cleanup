@@ -77,7 +77,7 @@ function queryMongo(mongo) {
 function processDoc(collection, db) {
     let stream = FS.createWriteStream("logs/code-cleanup/" + collection + ".log", {flags:'a'});
     return (doc) => {
-        if(ValueMap[collection] && doc.code) {
+        if(ValueMap[collection] && doc) {
             let values  = ValueMap[collection];
             let codes   = [
                 {
