@@ -19,7 +19,7 @@ const ValueMap = {
         "codeSystem": "2.16.840.1.113883.6.96",
         "codeSystemName": "snomed-CT"
     },
-    "biometrics": {
+    "biometricsUUID": {
         "codeSystem": "2.16.840.1.113883.6.1",
         "codeSystemName": "loinc"
     },
@@ -46,7 +46,7 @@ let dbUrl       = null;
 
 let serviceMap	= new Map([
 	["conditions",	    false],
-	["biometrics",      false],
+	["biometricsUUID",      false],
 	["immunizations",   false],
 	["procedures",      false]]);
 
