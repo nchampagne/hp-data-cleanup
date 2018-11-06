@@ -46,9 +46,11 @@ let dbUrl       = null;
 
 let serviceMap	= new Map([
 	["conditions",	    false],
-	["biometricsUUID",      false],
+	["biometricsUUID",  false],
 	["immunizations",   false],
 	["procedures",      false]]);
+
+let countMap	= new Map();
 
 // Exported hook
 module.exports.execute = function execute(mongoUri) {
@@ -70,12 +72,16 @@ function queryMongo(mongo) {
     mongoClient = mongo;
     let db = mongo.db("health-profile")
     for (const k of serviceMap.keys()) {
-        db.collection(k).find(Query).forEach(processDoc(k, db), handleCompletion(k));
+        db.collection(k).countDocuments(Query, null, (err, count) => {
+            countMap.set(k, count);
+            db.collection(k).find(Query).forEach(processDoc(k, db), handleCompletion(k, countMap.get(k)));
+        });
     }
 }
 
 function processDoc(collection, db) {
     let stream = FS.createWriteStream("logs/code-cleanup/" + collection + ".log", {flags:'a'});
+    let currentCount = countMap.get(collection);;
     return (doc) => {
         if(ValueMap[collection] && doc) {
             let values  = ValueMap[collection];
@@ -87,11 +93,15 @@ function processDoc(collection, db) {
                 }
             ]
             db.collection(collection).update({ "_id" : doc._id  }, { "$set": { "codeSystem": values.codeSystem, "codeSystemName": values.codeSystemName, "codes": codes }}, { upsert: false }, function(err, results) {
+                currentCount = currentCount - 1;
                 if(err) {
                     stream.write("ERROR writing to mongo: " + doc._id + " - " + err + "\n");
                 }
                 else {
                     stream.write("UPDATING: " + doc._id + "\n");
+                }
+                if(currentCount === 0) {
+                    finish(collection, collection);
                 }
             });
         }
@@ -109,14 +119,12 @@ function mongo(action) {
     });
 }
 
-function handleCompletion(collection) {
+function handleCompletion(collection, count) {
 	return (err) => {
 		if(err != null) console.log(Util.colors.red + "ERROR: " + Util.colors.nc + err);
-		else {
-			Util.prettifyText(collection, (text) => {
-				finish(text, collection);
-			});
-		}
+        else if(count === 0) {
+            finish(collection, collection);
+        }
 	};
 }
 
