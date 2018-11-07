@@ -92,7 +92,7 @@ function processDoc(collection, db) {
                     "codeSystemName": values.codeSystemName
                 }
             ]
-            db.collection(collection).update({ "_id" : doc._id  }, { "$set": { "codeSystem": values.codeSystem, "codeSystemName": values.codeSystemName, "codes": codes }}, { upsert: false }, function(err, results) {
+            db.collection(collection).update({ "_id" : doc._id  }, { "$set": { "codeSystem": values.codeSystem, "codeSystemName": values.codeSystemName, "codes": codes }}, { upsert: false, w: "majority" }, function(err, results) {
                 currentCount = currentCount - 1;
                 if(err) {
                     stream.write("ERROR writing to mongo: " + doc._id + " - " + err + "\n");
