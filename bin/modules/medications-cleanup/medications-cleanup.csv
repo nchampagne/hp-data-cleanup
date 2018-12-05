@@ -1,0 +1,306 @@
+﻿RATM_FactID,RATM_Definition,RxCUI current,TTY current,RxNorm_Name current,RxCUI new,TTY new,RxNorm_Name new,change
+10176,Abraxane,589511,BN,Abraxane,583218,SBD,Paclitaxel 100 MG Injection [Abraxane],remap to SBD
+3816,Accolate,135092,BN,Accolate,1165969,SBDG,Accolate Pill,remap to SBDG
+3758,Accupril,72210,BN,Accupril,1165997,SBDG,Accupril Pill,remap to SBDG
+4906,Actonel,753143,BN,Actonel,1169919,SBDG,Actonel Pill,remap to SBDG
+4901,Actos,261442,BN,Actos,1169929,SBDG,Actos Pill,remap to SBDG
+5193,Adalat CC,1169958,SBDG,Adalat Oral Product,1169959,SBDG,Adalat Pill,remap to SBDG
+5696,Adderall/Adderall XR,822929,MIN,Amphetamine aspartate / Amphetamine Sulfate / Dextroamphetamine saccharate / Dextroamphetamine Sulfate,1152903,SCDG,Amphetamine / Dextroamphetamine Pill,remap to SCDG
+5297,Advair,284635,MIN,fluticasone / salmeterol,1165654,SCDG,fluticasone / salmeterol Inhalant Product,remap to SCDG
+6938,Advair Diskus,284635,MIN,fluticasone / salmeterol,1165654,SCDG,fluticasone / salmeterol Inhalant Product,remap to SCDG
+10213,Advil PM,1172036,SBDG,Advil PM Oral Product,901818,SBD,Diphenhydramine Citrate 38 MG / Ibuprofen 200 MG Oral Tablet [Advil PM],remap to SBD
+4373,Aggrastat,187024,BN,Aggrastat,1172779,SBDG,Aggrastat Injectable Product,remap to SBDG
+4381,Aldactone,151317,BN,Aldactone,1174849,SBDG,Aldactone Pill,remap to SBDG
+5190,Altace,262418,BN,Altace,1169225,SBDG,Altace Pill,remap to SBDG
+10168,Alvesco,356739,BN,Alvesco,1170658,SBDG,Alvesco Inhalant Product,remap to SBDG
+5187,Amaryl,153592,BN,Amaryl,1170664,SBDG,Amaryl Pill,remap to SBDG
+4025,Ambien,131725,BN,Ambien,1170673,SBDG,Ambien Pill,remap to SBDG
+10208,Ambien CR,1170672,SBDG,Ambien Oral Product,1170673,SBDG,Ambien Pill,remap to SBDG
+4194,Amerge,153442,BN,Amerge,1171355,SBDG,Amerge Pill,remap to SBDG
+10843,Amitiza,615205,BN,Amitiza,1172837,SBDG,Amitiza Pill,remap to SBDG
+5278,Anaprox,202399,BN,Anaprox,1174930,SBDG,Anaprox Pill,remap to SBDG
+10849,Anaprox,202399,BN,Anaprox,1174930,SBDG,Anaprox Pill,remap to SBDG
+4217,Anaprox,202399,BN,Anaprox,1174930,SBDG,Anaprox Pill,remap to SBDG
+4248,Anaprox,202399,BN,Anaprox,1174930,SBDG,Anaprox Pill,remap to SBDG
+7262,Apidra,607583,BN,Apidra,1168563,SBDG,Apidra Injectable Product,remap to SBDG
+10184,Aplenzin,835486,BN,Aplenzin,1168565,SBDG,Aplenzin Pill,remap to SBDG
+4253,Arava,215393,BN,Arava,1170096,SBDG,Arava Pill,remap to SBDG
+7020,Arimidex,262485,BN,Arimidex,151124,SBD,Anastrozole 1 MG Oral Tablet [Arimidex],remap to SBD
+7021,Aromasin,262105,BN,Aromasin,261317,SBD,Exemestane 25 MG Oral Tablet [Aromasin],remap to SBD
+5279,Arthrotec,68373,BN,Arthrotec,1171435,SBDG,Arthrotec Pill,remap to SBDG
+4213,Arthrotec,68373,BN,Arthrotec,1171435,SBDG,Arthrotec Pill,remap to SBDG
+4241,Arthrotec,68373,BN,Arthrotec,1171435,SBDG,Arthrotec Pill,remap to SBDG
+10855,Asacol,196496,BN,Asacol,1171447,SBDG,Asacol Pill,remap to SBDG
+10830,Asmanex,30145,PIN,mometasone furoate,1165391,SCDG,Mometasone Inhalant Product,remap to SCDG
+7241,Astepro,824962,BN,Astepro,1797884,SBD,Azelastine Hydrochloride 0.206 MG/Actuat Metered Dose Nasal Spray [Astepro],remap to SBD
+3760,Atacand,215458,BN,Atacand,1172188,SBDG,Atacand Pill,remap to SBDG
+10197,Atacand,215458,BN,Atacand,1172188,SBDG,Atacand Pill,remap to SBDG
+10234,Avage,352449,BN,Avage,351944,SBD,Tazarotene 1 MG/ML Topical Cream [Avage],remap to SBD
+6284,Avandaryl,607816,BN,Avandaryl,1175659,SBDG,Avandaryl Pill,remap to SBDG
+3864,Avandia,261455,BN,Avandia,1175667,SBDG,Avandia Pill,remap to SBDG
+3761,Avapro,153668,BN,Avapro,1175670,SBDG,Avapro Pill,remap to SBDG
+6432,Avodart,352453,BN,Avodart,352118,SBD,Dutasteride 0.5 MG Oral Capsule [Avodart],remap to SBD
+5194,Axert,285046,BN,Axert,1176297,SBDG,Axert Pill,remap to SBDG
+4314,Axid,196464,BN,Axid,104096,SBD,Nizatidine 150 MG Oral Capsule [Axid],remap to SBD
+5317,Axid,196464,BN,Axid,104096,SBD,Nizatidine 150 MG Oral Capsule [Axid],remap to SBD
+10173,Azor,730862,BN,Azor,1166088,SBDG,Azor Pill,remap to SBDG
+4091,Azulfidine,202770,BN,Azulfidine,1166097,SBDG,Azulfidine Pill,remap to SBDG
+5318,Azulfidine,202770,BN,Azulfidine,1166097,SBDG,Azulfidine Pill,remap to SBDG
+4151,Beconase,151414,BN,Beconase,1797917,SBD,Beclomethasone Dipropionate 0.042 MG/Actuat Metered Dose Nasal Spray [Beconase],remap to SBD
+10206,BenGay,1089783,BN,Bengay,1170816,SBDG,Bengay Topical Product,remap to SBDG
+10833,Benicar,327503,BN,Benicar,1171463,SBDG,Benicar Pill,remap to SBDG
+4382,Betapace,224909,BN,Betapace,1172921,SBDG,Betapace Pill,remap to SBDG
+6941,Brovana,669390,BN,Brovana,695935,SBD,Arformoterol 0.0075 MG/ML Inhalant Solution [Brovana],remap to SBD
+4130,Buspar,154990,BN,Buspar,1168701,SBDG,Buspar Pill,remap to SBDG
+10187,Byetta,604751,BN,Byetta,1169415,SBDG,Byetta Injectable Product,remap to SBDG
+10174,Bystolic,751613,BN,Bystolic,1169417,SBDG,Bystolic Pill,remap to SBDG
+6949,Caduet,404914,BN,Caduet,1170826,SBDG,Caduet Pill,remap to SBDG
+6950,Caduet,404914,BN,Caduet,1170826,SBDG,Caduet Pill,remap to SBDG
+7004,Carbatrol,215879,BN,Carbatrol,1174377,SBDG,Carbatrol Pill,remap to SBDG
+5191,Cardizem CD,1175760,SBDG,Cardizem Oral Product,1175761,SBDG,Cardizem Pill,remap to SBDG
+4268,Cardura,196468,BN,Cardura,1175765,SBDG,Cardura Pill,remap to SBDG
+5281,Celebrex,215927,BN,Celebrex,1166199,SBDG,Celebrex Pill,remap to SBDG
+4223,Celebrex,215927,BN,Celebrex,1166199,SBDG,Celebrex Pill,remap to SBDG
+4242,Celebrex,215927,BN,Celebrex,1166199,SBDG,Celebrex Pill,remap to SBDG
+2419,Celexa,215928,BN,Celexa,1166211,SBDG,Celexa Pill,remap to SBDG
+10827,Chlor-Trimeton,202384,BN,Chlor-Trimeton,1169455,SBDG,Chlor-Trimeton Pill,remap to SBDG
+5176,Cialis,303263,BN,Cialis,1170244,SBDG,Cialis Pill,remap to SBDG
+10182,Cimzia,795082,BN,Cimzia,1170885,SBDG,Cimzia Injectable Product,remap to SBDG
+7264,Cimzia,795082,BN,Cimzia,1170885,SBDG,Cimzia Injectable Product,remap to SBDG
+4342,Climara,323984,BN,Climara,1297126,SBDG,Climara Transdermal Product,remap to SBDG
+6275,Colazal,284700,BN,Colazal,885859,SBD,Balsalazide Disodium 750 MG Oral Capsule [Colazal],remap to SBD
+10856,Colazal,284700,BN,Colazal,885859,SBD,Balsalazide Disodium 750 MG Oral Capsule [Colazal],remap to SBD
+5319,Colazide,153718,PIN,Balsalazide disodium,1158856,SCDG,balsalazide Pill,remap to SCDG
+6942,Combivent,151539,BN,Combivent,1190225,SBD,120 Actuat Albuterol 0.1 MG/Actuat / Ipratropium Bromide 0.02 MG/Actuat Metered Dose Inhaler [Combivent],remap to SBD
+5698,Concerta,284704,BN,Concerta,1168123,SBDG,Concerta Pill,remap to SBDG
+4379,Cordarone,203588,BN,Cordarone,833530,SBD,Amiodarone Hydrochloride 200 MG Oral Tablet [Cordarone],remap to SBD
+6283,Coreg,216221,BN,Coreg,1169533,SBDG,Coreg Pill,remap to SBDG
+4370,Coreg,216221,BN,Coreg,1169533,SBDG,Coreg Pill,remap to SBDG
+10183,Cortifoam,92265,BN,Cortifoam,1545174,SBD,Hydrocortisone Acetate 100 MG/ML Rectal Foam [Cortifoam],remap to SBD
+10242,Cortifoam,92265,BN,Cortifoam,1545174,SBD,Hydrocortisone Acetate 100 MG/ML Rectal Foam [Cortifoam],remap to SBD
+5127,Crestor,320864,BN,Crestor,1173053,SBDG,Crestor Pill,remap to SBDG
+10198,Crestor,320864,BN,Crestor,1173053,SBDG,Crestor Pill,remap to SBDG
+10238,Crestor,320864,BN,Crestor,1173053,SBDG,Crestor Pill,remap to SBDG
+5112,Cutivate,115045,BN,Cutivate,1173726,SBDG,Cutivate Topical Product,remap to SBDG
+10165,Cymbalta,482574,BN,Cymbalta,1174446,SBDG,Cymbalta Pill,remap to SBDG
+6092,Cymbalta,482574,BN,Cymbalta,1174446,SBDG,Cymbalta Pill,remap to SBDG
+10841,Cymbalta,482574,BN,Cymbalta,1174446,SBDG,Cymbalta Pill,remap to SBDG
+4730,Cytomel,3081,BN,Cytomel,1174485,SBDG,Cytomel Pill,remap to SBDG
+4315,Cytotec,151578,BN,Cytotec,1174488,SBDG,Cytotec Pill,remap to SBDG
+5320,Cytotec,151578,BN,Cytotec,1174488,SBDG,Cytotec Pill,remap to SBDG
+5282,Daypro,157381,BN,Daypro,207243,SBD,Oxaprozin 600 MG Oral Tablet [Daypro],remap to SBD
+4224,Daypro,157381,BN,Daypro,207243,SBD,Oxaprozin 600 MG Oral Tablet [Daypro],remap to SBD
+4243,Daypro,157381,BN,Daypro,207243,SBD,Oxaprozin 600 MG Oral Tablet [Daypro],remap to SBD
+6082,Depakote,216459,BN,Depakote,1173099,SBDG,Depakote Pill,remap to SBDG
+5195,Depakote,216459,BN,Depakote,1173099,SBDG,Depakote Pill,remap to SBDG
+4112,Detrol LA,1175215,SBDG,Detrol Oral Product,1175216,SBDG,Detrol Pill,remap to SBDG
+4290,Dilatrate-SR,1168864,SBDG,Dilatrate Oral Product,891870,SBD,Isosorbide Dinitrate 40 MG Extended Release Oral Capsule [Dilatrate],remap to SBD
+3769,Diovan,216652,BN,Diovan,1171721,SBDG,Diovan Pill,remap to SBDG
+6276,Dipentum,49131,BN,Dipentum,905164,SBD,Olsalazine Sodium 250 MG Oral Capsule [Dipentum],remap to SBD
+10857,Dipentum,49131,BN,Dipentum,905164,SBD,Olsalazine Sodium 250 MG Oral Capsule [Dipentum],remap to SBD
+4113,Ditropan XL,1172508,SBDG,Ditropan Oral Product,1172509,SBDG,Ditropan Pill,remap to SBDG
+4472,Dovonex,216731,BN,Dovonex,1175904,SBDG,Dovonex Topical Product,remap to SBDG
+10839,Duetact,647208,BN,Duetact,1166404,SBDG,Duetact Pill,remap to SBDG
+18017,Dulera,1372704,BN,Dulera,1166984,SBDG,Dulera Inhalant Product,remap to SBDG
+6943,Duoneb,285059,BN,Duoneb,1437704,SBD,Albuterol 0.833 MG/ML / Ipratropium Bromide 0.167 MG/ML Inhalant Solution [Duoneb],remap to SBD
+6091,Effexor,151692,BN,Effexor,1173220,SBDG,Effexor Pill,remap to SBDG
+2437,Effexor,151692,BN,Effexor,1173220,SBDG,Effexor Pill,remap to SBDG
+10199,Effient,151692,BN,Effexor,1173220,SBDG,Effexor Pill,remap to SBDG
+5166,Elavil,1152275,SCDG,Amitriptyline Oral Product,856836,SBD,Elavil 25 MG Oral Tablet,remap to SBD
+4943,Elidel,306865,BN,Elidel,352085,SBD,Pimecrolimus 10 MG/ML Topical Cream [Elidel],remap to SBD
+4944,Elocon,216878,BN,Elocon,1174624,SBDG,Elocon Topical Product,remap to SBDG
+10226,Enablex,397392,BN,Enablex,1175955,SBDG,Enablex Pill,remap to SBDG
+4252,Enbrel,216891,BN,Enbrel,1175957,SBDG,Enbrel Injectable Product,remap to SBDG
+6277,Entocort EC,1167031,SBDG,Entocort Oral Product,1244215,SBD,Budesonide 3 MG Delayed Release Oral Capsule [Entocort],remap to SBD
+4344,Estraderm,216985,BN,Estraderm,1295828,SBDG,Estraderm Transdermal Product,remap to SBDG
+10218,Estrogel,405052,BN,Estrogel,581549,SBD,Estradiol 0.0006 MG/MG Topical Gel [Estrogel],remap to SBD
+10845,Euflexxa,604726,BN,Euflexxa,1190179,SBD,2 ML Sodium Hyaluronate 10 MG/ML Prefilled Syringe [Euflexxa],remap to SBD
+10222,Euflexxa,604726,BN,Euflexxa,1190179,SBD,2 ML Sodium Hyaluronate 10 MG/ML Prefilled Syringe [Euflexxa],remap to SBD
+10219,Evamist,728119,BN,Evamist,728122,SBD,Estradiol 1.53 MG/Actuat Topical Spray [Evamist],remap to SBD
+4907,Evista,217010,BN,Evista,1490067,SBD,Raloxifene Hydrochloride 60 MG Oral Tablet [Evista],remap to SBD
+10221,Excedrin Migraine,1172559,SBDG,Excedrin Oral Product,209468,SBD,Acetaminophen 250 MG / Aspirin 250 MG / Caffeine 65 MG Oral Tablet [Excedrin],remap to SBD
+7108,Exforge,722127,BN,Exforge,1173242,SBDG,Exforge Pill,remap to SBDG
+10177,Faslodex,203870,BN,Faslodex,727954,SBD,5 ML Fulvestrant 50 MG/ML Prefilled Syringe [Faslodex],remap to SBD
+5283,Feldene,197288,BN,Feldene,1176009,SBDG,Feldene Pill,remap to SBDG
+4214,Feldene,197288,BN,Feldene,1176009,SBDG,Feldene Pill,remap to SBDG
+4244,Feldene,197288,BN,Feldene,1176009,SBDG,Feldene Pill,remap to SBDG
+7022,Femara,203769,BN,Femara,153124,SBD,Letrozole 2.5 MG Oral Tablet [Femara],remap to SBD
+5200,FemHRT,403732,BN,Femhrt,1251325,SBD,Ethinyl Estradiol 0.0025 MG / Norethindrone Acetate 0.5 MG Oral Tablet [Femhrt],remap to SBD
+10194,Finasteride,1159652,SCDG,Finasteride Oral Product,1159653,SCDG,Finasteride Pill,remap to SCDG
+6278,Flagyl,202866,BN,Flagyl,1169008,SBDG,Flagyl Pill,remap to SBDG
+4269,Flomax,190283,BN,Flomax,863671,SBD,Tamsulosin Hydrochloride 0.4 MG Oral Capsule [Flomax],remap to SBD
+3821,Flovent,217152,BN,Flovent,1169793,SBDG,Flovent Inhalant Product,remap to SBDG
+10822,Focalin XR,1171880,SBDG,Focalin Oral Product,1171881,SBDG,Focalin Pill,remap to SBDG
+10831,Foradil,152611,BN,Foradil,1246328,SBD,Formoterol Fumarate 0.012 MG Inhalant Powder [Foradil],remap to SBD
+4908,Forteo,352657,BN,Forteo,1435117,SBD,28 Actuat Teriparatide 0.02 MG/Actuat Pen Injector [Forteo],remap to SBD
+4909,Fosamax,114265,BN,Fosamax,1173286,SBDG,Fosamax Pill,remap to SBDG
+5196,Frova,322250,BN,Frova,352058,SBD,Frovatriptan 2.5 MG Oral Tablet [Frova],remap to SBD
+3993,Gabitril,217243,BN,Gabitril,1175366,SBDG,Gabitril Pill,remap to SBDG
+10227,Gelnique,831887,BN,Gelnique,1167709,SBDG,Gelnique Topical Product,remap to SBDG
+3867,Glucophage,151827,BN,Glucophage,1171245,SBDG,Glucophage Pill,remap to SBDG
+3868,Glucotrol XL,1171246,SBDG,Glucotrol Oral Product,1171247,SBDG,Glucotrol Pill,remap to SBDG
+4902,Glucovance,284743,BN,Glucovance,1171249,SBDG,Glucovance Pill,remap to SBDG
+3869,Glynase/Micronase,4815,IN,Glyburide,1156201,SCDG,Glyburide Pill,remap to SCDG
+4270,Harnal,236495,PIN,Tamsulosin hydrochloride,1160873,SCDG,tamsulosin Pill,remap to SCDG
+5105,Hepsera,342285,BN,Hepsera,1169107,,Hepsera Pill,remap to SBDG
+7024,Herceptin,101306,BN,Herceptin,1169113,SBDG,Herceptin Injectable Product,remap to SBDG
+3870,Humalog,135805,BN,Humalog,1171289,SBDG,Humalog Injectable Product,remap to SBDG
+10836,Humira,353484,BN,Humira,1171992,SBDG,Humira Injectable Product,remap to SBDG
+5201,Humira,353484,BN,Humira,1171992,SBDG,Humira Injectable Product,remap to SBDG
+3871,Humulin,92881,BN,Humulin R,1172692,SBDG,Humulin R Injectable Product,remap to SBDG
+10223,Hyalgan,154682,BN,Hyalgan,1172710,SBDG,Hyalgan Injectable Product,remap to SBDG
+4271,Hytrin,1164232,SCDG,Terazosin Oral Product,1164233,SCDG,Terazosin Pill,remap to SBDG
+10207,Icy Hot,1038974,BN,Icy Hot,1166602,SBDG,Icy Hot Topical Product,remap to SBDG
+6279,Imuran,202559,BN,Imuran,105611,SBD,Azathioprine 50 MG Oral Tablet [Imuran],remap to SBD
+10850,Inderal,151890,BN,Inderal,1172017,SBDG,Inderal Pill,remap to SBDG
+4374,Integrilin,288688,BN,Integrilin,1173433,SBDG,Integrilin Injectable Product,remap to SBDG
+3893,Intron A,545290,BN,Intron A,1173444,SBDG,Intron A Injectable Product,remap to SBDG
+7265,Januvia,638596,BN,Januvia,1167815,SBDG,Januvia Pill,remap to SBDG
+10166,Klonopin,202585,BN,Klonopin,1172120,SBDG,Klonopin Pill,remap to SBDG
+3989,Klonopin,202585,BN,Klonopin,1172120,SBDG,Klonopin Pill,remap to SBDG
+4903,Lantus,261551,BN,Lantus,1175624,SBDG,Lantus Injectable Product,remap to SBDG
+4378,Lasix,202991,BN,Lasix,1175648,SBDG,Lasix Pill,remap to SBDG
+3654,Lescol,151972,BN,Lescol,1166062,SBDG,Lescol Pill,remap to SBDG
+10838,Levemir,400560,BN,Levemir,1167934,SBDG,Levemir Injectable Product,remap to SBDG
+5177,Levitra,356884,BN,Levitra,1167938,SBDG,Levitra Pill,remap to SBDG
+4731,Levothroid,218001,BN,Levothroid,1185570,SBDG,Levothroid Pill,remap to SBDG
+4732,Levoxyl,218002,BN,Levoxyl,1185574,SBDG,Levoxyl Pill,remap to SBDG
+10243,Lialda,686430,BN,Lialda,686433,SBD,Mesalamine 1200 MG Delayed Release Oral Tablet [Lialda],remap to SBD
+3655,Lipitor,153165,BN,Lipitor,1177401,SBDG,Lipitor Pill,remap to SBDG
+10200,Lipitor,153165,BN,Lipitor,1177401,SBDG,Lipitor Pill,remap to SBDG
+5284,Lodine XL,24605,IN,Etodolac,1157925,SCDG,Etodolac Pill,remap to SCDG
+4225,Lodine XL,24605,IN,Etodolac,1179158,SBDG,Lodine Pill,remap to SBDG
+4245,Lodine XL,24605,IN,Etodolac,1179158,SBDG,Lodine Pill,
+3743,Lopid,202999,BN,Lopid,205751,SBD,Gemfibrozil 600 MG Oral Tablet [Lopid],remap to SBD
+3777,Lotensin,218088,BN,Lotensin,1180905,SBDG,Lotensin Pill,remap to SBDG
+5168,Lotronex,261563,BN,Lotronex,1180923,SBDG,Lotronex Pill,remap to SBDG
+6031,Lunesta,540404,BN,Lunesta,1181485,SBDG,Lunesta Pill,remap to SBDG
+5699,Metadate CD,1185047,SBDG,Metadate Oral Product,1185048,SBDG,Metadate Pill,remap to SBDG
+3656,Mevacor,224938,BN,Mevacor,1177513,SBDG,Mevacor Pill,remap to SBDG
+10175,Micardis,218353,BN,Micardis,1178059,SBDG,Micardis Pill,remap to SBDG
+4197,Migranal,42643,BN,Migranal,861670,SBD,Dihydroergotamine Mesylate 0.5 MG/Actuat Nasal Spray [Migranal],remap to SBD
+4294,Monoket,202851,BN,Monoket,1182228,SBDG,Monoket Pill,remap to SBDG
+3782,Monopril,225030,BN,Monopril,1182233,SBDG,Monopril Pill,remap to SBDG
+10201,Multaq,677229,BN,Multaq,854859,SBD,Dronedarone 400 MG Oral Tablet [Multaq],remap to SBD
+5286,Naprelan,218599,BN,Naprelan,1178762,SBDG,Naprelan Pill,remap to SBDG
+4215,Naprelan,218599,BN,Naprelan,1178762,SBDG,Naprelan Pill,remap to SBDG
+4246,Naprelan,218599,BN,Naprelan,1178762,SBDG,Naprelan Pill,remap to SBDG
+4155,Nasacort,153239,BN,Nasacort,1797915,SBD,Triamcinolone Acetonide 0.055 MG/Actuat Metered Dose Nasal Spray [Nasacort],remap to SBD
+4156,Nasonex,153376,BN,Nasonex,1797870,SBD,Mometasone Furoate 0.05 MG/Actuat Metered Dose Nasal Spray [Nasonex],remap to SBD
+3892,Neupogen,227304,BN,Neupogen,1182281,SBDG,Neupogen Injectable Product,remap to SBDG
+7199,Niaspan,346366,BN,Niaspan,1183356,SBDG,Niaspan Pill,remap to SBDG
+3848,Nimotop,196516,BN,Nimotop,207779,SBD,Nimodipine 30 MG Oral Capsule [Nimotop],remap to SBD
+4296,Nitro-Dur,202508,BN,Nitro-Dur,1296141,SBDG,Nitro-Dur Transdermal Product,remap to SBDG
+3784,Norvasc,58927,BN,Norvasc,1185733,SBDG,Norvasc Pill,remap to SBDG
+17964,Novolin,93560,BN,Novolin R,311033,SBD,"Regular Insulin, Human 100 UNT/ML Injectable Solution [Novolin R]",remap to SBD
+17965,Novolog,284810,BN,Novolog,1178119,SBDG,Novolog Injectable Product,remap to SBDG
+10161,Omnaris,683073,BN,Omnaris,1797843,SBD,Ciclesonide 0.05 MG/Actuat Metered Dose Nasal Spray [Omnaris],remap to SBD
+10188,Onglyza,858037,BN,Onglyza,1181730,SBDG,Onglyza Pill,remap to SBDG
+7237,Orencia,616011,BN,Orencia,1183963,SBDG,Orencia Injectable Product,remap to SBDG
+10844,Orthovisc,398331,BN,Orthovisc,1245985,SBD,2 ML Sodium Hyaluronate 15 MG/ML Prefilled Syringe [Orthovisc],remap to SBD
+10224,Orthovisc,398331,BN,Orthovisc,1245985,SBD,2 ML Sodium Hyaluronate 15 MG/ML Prefilled Syringe [Orthovisc],remap to SBD
+10228,Oxytrol,356886,BN,Oxytrol,404448,SBD,84 Hr Oxybutynin 0.162 MG/Hr Transdermal System [Oxytrol],remap to SBD
+7242,Patanase,795090,BN,Patanase,1797898,SBD,Olopatadine Hydrochloride 0.665 MG/Actuat Metered Dose Nasal Spray [Patanase],remap to SBD
+5184,Patanol,219114,BN,Patanol,1111341,SBD,Olopatadine 1 MG/ML Ophthalmic Solution [Patanol],remap to SBD
+6280,Pentasa,196495,BN,Pentasa,1184586,SBDG,Pentasa Pill,remap to SBDG
+10858,Pentasa,196495,BN,Pentasa,1184586,SBDG,Pentasa Pill,remap to SBDG
+7008,Phenytek,352891,BN,Phenytek,1180001,SBDG,Phenytek Pill,remap to SBDG
+10854,Plaquenil,202462,BN,Plaquenil,979094,SBD,Hydroxychloroquine Sulfate 200 MG Oral Tablet [Plaquenil],remap to SBD
+4366,Plavix,174742,BN,Plavix,1181791,SBDG,Plavix Pill,remap to SBDG
+10239,Plavix,174742,BN,Plavix,1181791,SBDG,Plavix Pill,remap to SBDG
+3786,Plendil,203016,BN,Plendil,104420,SBD,24 Hr Felodipine 10 MG Extended Release Oral Tablet [Plendil],remap to SBD
+5188,Prandin,219335,BN,Prandin,1184632,SBDG,Prandin Pill,remap to SBDG
+3657,Pravachol,203333,BN,Pravachol,1184639,SBDG,Pravachol Pill,remap to SBDG
+3874,Precose,151826,BN,Precose,1185238,SBDG,Precose Pill,remap to SBDG
+3787,Prinivil,203644,BN,Prinivil,1178276,SBDG,Prinivil Pill,remap to SBDG
+10837,Pristiq,711372,BN,Pristiq,1178921,SBDG,Pristiq Pill,remap to SBDG
+3788,Procardia XL,1180008,SBDG,Procardia Oral Product,1180009,SBDG,Procardia Pill,remap to SBDG
+3936,Propecia,219462,BN,Propecia,213178,SBD,Finasteride 1 MG Oral Tablet [Propecia],remap to SBD
+10240,Propylthiouracil,1162944,SCDG,Propylthiouracil Oral Product,1162945,SCDG,Propylthiouracil Pill,remap to SCDG
+10195,Proscar,196476,BN,Proscar,201961,SBD,Finasteride 5 MG Oral Tablet [Proscar],remap to SBD
+4272,Proscar,196476,BN,Proscar,201961,SBD,Finasteride 5 MG Oral Tablet [Proscar],remap to SBD
+4945,Protopic,284848,BN,Protopic,1182458,SBDG,Protopic Topical Product,remap to SBDG
+4349,Provera,202888,BN,Provera,1182478,SBDG,Provera Pill,remap to SBDG
+2506,Prozac,58827,BN,Prozac,1182487,SBDG,Prozac Pill,remap to SBDG
+3826,Pulmicort,196487,BN,Pulmicort,1183558,SBDG,Pulmicort Inhalant Product,remap to SBDG
+10273,Ranexa,356778,BN,Ranexa,1177694,SBDG,Ranexa Pill,remap to SBDG
+10232,Rapaflo,809478,BN,Rapaflo,1177700,SBDG,Rapaflo Pill,remap to SBDG
+5197,Relpax,353724,BN,Relpax,1180712,SBDG,Relpax Pill,remap to SBDG
+4093,Remicade,219610,BN,Remicade,213361,SBD,Infliximab 100 MG Injection [Remicade],remap to SBD
+6045,Remicade,219610,BN,Remicade,213361,SBD,Infliximab 100 MG Injection [Remicade],remap to SBD
+5202,Remicade,219610,BN,Remicade,213361,SBD,Infliximab 100 MG Injection [Remicade],remap to SBD
+5329,Remicade,219610,BN,Remicade,213361,SBD,Infliximab 100 MG Injection [Remicade],remap to SBD
+10209,Restoril,219641,BN,Restoril,1182532,SBDG,Restoril Pill,remap to SBDG
+4157,Rhinocort Aqua,196488,BN,Rhinocort,1797931,SBD,Budesonide 0.032 MG/Actuat Metered Dose Nasal Spray [Rhinocort],remap to SBD
+5697,Ritalin,224917,BN,Ritalin,1185344,SBDG,Ritalin Pill,remap to SBDG
+7238,Rituxan,226754,BN,Rituxan,1185345,SBDG,Rituxan Injectable Product,remap to SBDG
+10196,Rogaine,6984,IN,Minoxidil,1181375,SBDG,Rogaine Topical Product,remap to SBDG
+10212,Rozerem,603159,BN,Rozerem,603162,SBD,Ramelteon 8 MG Oral Tablet [Rozerem],remap to SBD
+4384,Rythmol,82079,BN,Rythmol,1183689,SBDG,Rythmol Pill,remap to SBDG
+10229,Sanctura XR,1159360,SCDG,Trospium Oral Product,1159361,SCDG,Trospium Pill,remap to SCDG
+10192,Savella,833136,BN,Savella,1177183,SBDG,Savella Pill,remap to SBDG
+6944,Serevent,203159,BN,Serevent,1180757,SBDG,Serevent Inhalant Product,remap to SBDG
+6086,Seroquel,83553,BN,Seroquel,1180763,SBDG,Seroquel Pill,remap to SBDG
+10217,Silenor,966788,BN,Silenor,1182604,SBDG,Silenor Pill,remap to SBDG
+10180,Simcor,1372731,BN,Simcor,1182627,SBDG,Simcor Pill,remap to SBDG
+10215,Simply Sleep,262241,BN,Simply Sleep,1092466,SBD,Diphenhydramine Hydrochloride 25 MG Oral Tablet [Simply Sleep],remap to SBD
+10261,Simponi,848161,BN,Simponi,1182643,SBDG,Simponi Injectable Product,remap to SBDG
+10210,Sominex,152371,BN,Sominex,1185420,SBDG,Sominex Pill,remap to SBDG
+4474,Soriatane,196467,BN,Soriatane,1186018,SBDG,Soriatane Pill,remap to SBDG
+6945,Spiriva,274535,BN,Spiriva,1177261,SBDG,Spiriva Inhalant Product,remap to SBDG
+4924,Starlix,402943,BN,Starlix,1178434,SBDG,Starlix Pill,remap to SBDG
+10236,Stelara,853351,BN,Stelara,1178973,SBDG,Stelara Injectable Product,remap to SBDG
+5695,Strattera,358330,BN,Strattera,1180206,SBDG,Strattera Pill,remap to SBDG
+10225,Supartz,352995,BN,Supartz,1184311,SBDG,Supartz Injectable Product,remap to SBDG
+10170,Symbicort,327148,BN,Symbicort,1185492,SBDG,Symbicort Inhalant Product,remap to SBDG
+10181,Symbicort,327148,BN,Symbicort,1185492,SBDG,Symbicort Inhalant Product,remap to SBDG
+10171,Symbyax,405343,BN,Symbyax,1185499,SBDG,Symbyax Pill,remap to SBDG
+10186,Symbyax,405343,BN,Symbyax,1185499,SBDG,Symbyax Pill,remap to SBDG
+3911,Synthroid,224920,BN,Synthroid,1186074,SBDG,Synthroid Pill,remap to SBDG
+5289,Synvisc,220144,BN,Synvisc,1186076,SBDG,Synvisc Injectable Product,remap to SBDG
+4222,Synvisc,220144,BN,Synvisc,1186076,SBDG,Synvisc Injectable Product,remap to SBDG
+17765,Synvisc-One,220144,BN,Synvisc,1186076,SBDG,Synvisc Injectable Product,remap to SBDG
+17766,Synvisc-One,220144,BN,Synvisc,1186076,SBDG,Synvisc Injectable Product,remap to SBDG
+4324,Tagamet,152402,BN,Tagamet,104062,SBD,Cimetidine 200 MG Oral Tablet [Tagamet],remap to SBD
+5331,Tagamet,152402,BN,Tagamet,104062,SBD,Cimetidine 200 MG Oral Tablet [Tagamet],remap to SBD
+4733,Tapazole,224936,BN,Tapazole,1179034,SBDG,Tapazole Pill,remap to SBDG
+10829,Tavist,42602,BN,Tavist,857443,SBD,Clemastine Fumarate 1.34 MG Oral Tablet [Tavist],remap to SBD
+4475,Tazorac,220181,BN,Tazorac,1180262,SBDG,Tazorac Topical Product,remap to SBDG
+7109,Tekturna,700402,BN,Tekturna,1180881,SBDG,Tekturna Pill,remap to SBDG
+5564,Thyrolar,1007245,MIN,Thyroxine / Triiodothyronine,1602752,SCDG,levothyroxine / liothyronine Pill,remap to SCDG
+3847,Ticlid,227257,BN,Ticlid,208558,SBD,Ticlopidine Hydrochloride 250 MG Oral Tablet [Ticlid],remap to SBD
+6088,Topamax,220343,BN,Topamax,1177987,SBDG,Topamax Pill,remap to SBDG
+3992,Topamax,220343,BN,Topamax,1177987,SBDG,Topamax Pill,remap to SBDG
+5198,Topamax,220343,BN,Topamax,1177987,SBDG,Topamax Pill,remap to SBDG
+3797,Toprol-XL,1178006,SBDG,Toprol Oral Product,1178007,SBDG,Toprol Pill,remap to SBDG
+10230,Toviaz,810072,BN,Toviaz,1178620,SBDG,Toviaz Pill,remap to SBDG
+4298,Transderm-Nitro,1295573,SCDG,Nitroglycerin Transdermal Product,1295573,SCDG,Nitroglycerin Transdermal Product,remap to SCDG
+7196,Treximet,794765,BN,Treximet,1179686,SBDG,Treximet Pill,remap to SBDG
+18272,Tribenzor,1372732,BN,Tribenzor,1182147,SBDG,Tribenzor Pill,remap to SBDG
+10178,Tykerb,659616,BN,Tykerb,672152,SBD,Lapatinib 250 MG Oral Tablet [Tykerb],remap to SBD
+10216,Tylenol PM,220581,BN,Tylenol PM,1092378,SBD,Acetaminophen 500 MG / Diphenhydramine Hydrochloride 25 MG Oral Tablet [Tylenol PM],remap to SBD
+10842,Ultram,220606,BN,Ultram,1187717,SBDG,Ultram Pill,remap to SBDG
+10211,Unisom,220672,BN,Unisom,1101448,SBD,Doxylamine Succinate 25 MG Oral Tablet [Unisom],remap to SBD
+10233,Uroxatral,356728,BN,Uroxatral,861134,SBD,24 Hr Alfuzosin Hydrochloride 10 MG Extended Release Oral Tablet [Uroxatral],remap to SBD
+4132,Valium,202472,BN,Valium,1187151,SBDG,Valium Pill,remap to SBDG
+4178,Valium,202472,BN,Valium,1187151,SBDG,Valium Pill,remap to SBDG
+5362,Valtrex,152490,BN,Valtrex,1187343,SBDG,Valtrex Pill,remap to SBDG
+10834,Valturna,1164885,SCDG,aliskiren / valsartan Oral Product,1164886,SCDG,Aliskiren / Valsartan Pill,remap to SCDG
+3798,Vasotec,224921,BN,Vasotec,1187735,SBDG,Vasotec Pill,remap to SBDG
+10237,Vectical,831894,BN,Vectical,883358,SBD,Calcitriol 0.000003 MG/MG Topical Ointment [Vectical],remap to SBD
+7243,Veramyst,705025,BN,Veramyst,1797892,SBD,Fluticasone Furoate 0.0275 MG/Actuat Metered Dose Nasal Spray [Veramyst],remap to SBD
+10231,Vesicare,539812,BN,Vesicare,1187117,SBDG,Vesicare Pill,remap to SBDG
+4009,Viagra,190465,BN,Viagra,1188097,SBDG,Viagra Pill,remap to SBDG
+10189,Victoza,897123,BN,Victoza,897126,SBD,3 ML Liraglutide 6 MG/ML Pen Injector [Victoza],remap to SBD
+17966,Vimovo,1372705,BN,Vimovo,1186607,SBDG,Vimovo Pill,remap to SBDG
+10220,Vivelle-Dot,1296507,SBDG,Vivelle Transdermal Product,1296507,SBDG,Vivelle Transdermal Product,remap to SBDG
+5263,Vytorin,495215,BN,Vytorin,1245440,SBDG,Vytorin Pill,remap to SBDG
+2547,Wellbutrin,42568,BN,Wellbutrin,1187947,SBDG,Wellbutrin Pill,remap to SBDG
+5113,Westcort,220938,BN,Westcort,1370752,SBD,Hydrocortisone Valerate 0.002 MG/MG Topical Ointment [Westcort],remap to SBD
+4133,Xanax,202363,BN,Xanax,1186301,SBDG,Xanax Pill,remap to SBDG
+4179,Xanax,202363,BN,Xanax,1186301,SBDG,Xanax Pill,remap to SBDG
+3799,Zestril,196472,BN,Zestril,1187284,SBDG,Zestril Pill,remap to SBDG
+5181,Zetia,353099,BN,Zetia,352304,SBD,Ezetimibe 10 MG Oral Tablet [Zetia],remap to SBD
+3659,Zocor,196503,BN,Zocor,1187974,SBDG,Zocor Pill,remap to SBDG
+5090,Zoladex,58328,BN,Zoladex,1188163,SBDG,Zoladex Drug Implant Product,remap to SBDG
+5111,Zonegran,261708,BN,Zonegran,1186310,SBDG,Zonegran Pill,remap to SBDG
