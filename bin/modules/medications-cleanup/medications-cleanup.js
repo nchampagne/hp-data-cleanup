@@ -35,6 +35,10 @@ function process(x, xs, collection, onEnd) {
     let options = {
         upsert: false
     };
+    let findQuery = {
+        "source.name": "RealAge",
+        "code": x["RxCUI current"]
+    };
     let codes = [
         {
             "codeClass": `TTY:${x["TTY new"]}`,
@@ -43,21 +47,27 @@ function process(x, xs, collection, onEnd) {
             "codeSystemName": "rxNorm"
         }
     ]
-    let update = {
-        "$set": {
-            "name": x["RxNorm_Name new"],
-            "codeClass": `TTY:${x["TTY new"]}`,
-            "code": x["RxCUI new"],
-            "codeSystem": "2.16.840.1.113883.6.88",
-            "codeSystemName": "rxNorm",
-            "codes": codes
+
+    function updateDoc(doc) {
+        return {
+            "$set": {
+                "name": x["RxNorm_Name new"],
+                "codeClass": `TTY:${x["TTY new"]}`,
+                "code": x["RxCUI new"],
+                "codeSystem": "2.16.840.1.113883.6.88",
+                "codeSystemName": "rxNorm",
+                "codes": codes,
+                "secureDistinctKey": `${doc.secureId}-${x["RxCUI new"]}-${doc.source.type}`
+            }
         }
-    };
-    let query = {
-        "source.name": "RealAge",
-        "code": x["RxCUI current"]
-    };
-    collection.updateMany(query, update, options, (err, result) => {
+    }
+
+    collection.find(findQuery).forEach((doc) => {
+        // console.log(doc._id);
+        if(doc) collection.updateOne({ "_id": doc._id }, updateDoc(doc), options, (err, result) => {
+            if(err) console.error(err);
+        });
+    }, (err) => {
         if(err) console.error(err);
         let xs0 = xs.shift();
         if(xs0) process(xs0, xs, collection, onEnd);
