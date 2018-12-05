@@ -25,22 +25,39 @@ function execute(dbUrl) {
         .on("end", () => {
             let list = new Array();
             opMap.forEach((v, k, m) => { list.push(v); });
-            console.log(`OP SIZE: ${list.length}`);
             process(list.shift(), list, collection, () => mongo.close());
-            // mongo.close();
         });
     });
 }
 
 function process(x, xs, collection, onEnd) {
     console.log(`${x["RxNorm_Name current"]}`);
+    let options = {
+        upsert: false
+    };
+    let codes = [
+        {
+            "codeClass": `TTY:${x["TTY new"]}`,
+            "code": x["RxCUI new"],
+            "codeSystem": "2.16.840.1.113883.6.88",
+            "codeSystemName": "rxNorm"
+        }
+    ]
+    let update = {
+        "$set": {
+            "name": x["RxNorm_Name new"],
+            "codeClass": `TTY:${x["TTY new"]}`,
+            "code": x["RxCUI new"],
+            "codeSystem": "2.16.840.1.113883.6.88",
+            "codeSystemName": "rxNorm",
+            "codes": codes
+        }
+    };
     let query = {
         "source.name": "RealAge",
         "code": x["RxCUI current"]
-    }
-    collection.find(query).forEach((doc) => {
-        if(doc) console.log(doc._id);
-    }, (err) => {
+    };
+    collection.updateMany(query, update, options, (err, result) => {
         if(err) console.error(err);
         let xs0 = xs.shift();
         if(xs0) process(xs0, xs, collection, onEnd);
