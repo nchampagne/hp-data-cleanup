@@ -1,19 +1,25 @@
 const CsvParse  = require("csv-parse");
 const Mongo     = require("../mongo/mongo.js");
 const FS        = require("fs");
+const Path      = require('path');
+const Util      = require("../utils/utils.js");
 
 // CREATE INDEX: db.medications.createIndex({"source.name": 1, "code": 1})
 
-let file = "medications-cleanup.csv";
-let csvOptions = {
-    delimiter: ",",
-    columns: true
-};
-let testDBUrl = "mongodb://localhost:27017";
-execute(testDBUrl);
-
 function execute(dbUrl) {
+    Util.createLogDir("medications-cleanup");
+    let stream = FS.createWriteStream("logs/medications-cleanup/medications-cleanup.log", {flags:'a'});
+
+    let file = Path.resolve(__dirname, '../../data/medications-cleanup.csv');
+    let csvOptions = {
+        delimiter: ",",
+        columns: true
+    };
     let opMap = new Map();
+
+    function onUpdate(doc) { stream.write(`UPDATED: ${doc._id}\n`) }
+    function onError(err) { stream.write(`ERROR: ${err}\n`); }
+
     Mongo.initMongo(dbUrl, (mongo) => {
         let db = mongo.db("health-profile");
         let collection = db.collection("medications");
@@ -25,12 +31,12 @@ function execute(dbUrl) {
         .on("end", () => {
             let list = new Array();
             opMap.forEach((v, k, m) => { list.push(v); });
-            process(list.shift(), list, collection, () => mongo.close());
+            process(list.shift(), list, collection, onUpdate, onError, () => mongo.close());
         });
     });
 }
 
-function process(x, xs, collection, onEnd) {
+function process(x, xs, collection, onUpdate, onError, onEnd) {
     console.log(`${x["RxNorm_Name current"]}`);
     let options = {
         upsert: false
@@ -63,14 +69,14 @@ function process(x, xs, collection, onEnd) {
     }
 
     collection.find(findQuery).forEach((doc) => {
-        // console.log(doc._id);
         if(doc) collection.updateOne({ "_id": doc._id }, updateDoc(doc), options, (err, result) => {
-            if(err) console.error(err);
+            if(err) onError(err);
+            else onUpdate(doc);
         });
     }, (err) => {
-        if(err) console.error(err);
+        if(err) onError(err);
         let xs0 = xs.shift();
-        if(xs0) process(xs0, xs, collection, onEnd);
+        if(xs0) process(xs0, xs, collection, onUpdate, onError, onEnd);
         else onEnd();
     });
 }

@@ -1,4 +1,5 @@
 const Http  = require('http');
+const FS 	= require('fs');
 
 const colors = {
     green:  '\033[0;32m',
@@ -6,9 +7,7 @@ const colors = {
 	nc:     '\033[0m'
 };
 
-module.exports.colors = colors;
-
-module.exports.prettifyText = function (text, cb) {
+function prettifyText(text, cb) {
 	Http.get('http://artii.herokuapp.com/make?text=' + text, (resp) => {
 		let data = '';
 		resp.on('data', (chunk) => {
@@ -23,3 +22,16 @@ module.exports.prettifyText = function (text, cb) {
 		cb(text);
 	});
 }
+
+function createLogDir(dirName) {
+    if (!FS.existsSync("logs")) {
+        FS.mkdirSync("logs");
+    }
+    if (!FS.existsSync(`logs/${dirName}`)) {
+        FS.mkdirSync(`logs/${dirName}`);
+    }
+}
+
+module.exports.colors = colors;
+module.exports.createLogDir = createLogDir;
+module.exports.prettifyText = prettifyText

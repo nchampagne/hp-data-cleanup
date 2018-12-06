@@ -2,6 +2,7 @@ const Argv                  = require('minimist')
 const CodeCleanup           = require("./modules/code-updates/code-updates.js");
 const HighmarkHPCDupes      = require("./modules/highmark-healthplanclaim-dupes/highmark-healthplanclaim-dupes.js");
 const DemographicsCatchup   = require("./modules/data-catchup/data-catchup.js");
+const MedicationsCleanup    = require("./modules/medications-cleanup/medications-cleanup.js");
 
 /*
  *  -m localhost:27017
@@ -42,6 +43,9 @@ function executeCommand(command) {
             break;
         case "data-catchup":
             DemographicsCatchup.execute("mongodb://" + args.s, "mongodb://" + args.d);
+            break;
+        case "medications-cleanup":
+            MedicationsCleanup.execute("mongodb://" + args.m);
             break;
         default:
             if(command) console.log("Unrecognized command " + command);
